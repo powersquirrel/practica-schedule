@@ -1,0 +1,18 @@
+/*
+* Colorful palette
+*/
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Quicksand:wght@300&display=swap');
+:root{
+    --ed: #E63232;
+    --tap: #F3722C;
+    --tso: #F8961E;
+    --pead: #FFD043;
+    --fbd: #7FC96B;
+    --mn: #43AA8B;
+    --dw: #277DA1;
+    --en: #3B498E;
+    --hw: #66418A;
+    --main-font: 'Oxygen', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
+    --border: #b62929;
+}

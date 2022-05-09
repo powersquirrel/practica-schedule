@@ -1,0 +1,209 @@
+/*
+ED, TAP, TSO, PEAP, FDB, MN, DW, EN, HW
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+select{
+    border-radius: 5px;
+    background-color: white;
+    height: 40px;
+}
+h1{
+    font-family: var(--main-font);
+    text-align: center;
+}
+/* Classes */
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ed{
+    background-color: var(--ed);
+}
+.tap{
+    background-color: var(--tap);
+}
+.tso{
+    background-color: var(--tso);
+}
+.pead{
+    background-color: var(--pead);
+}
+.fbd{
+    background-color: var(--fbd);
+}
+.mn{
+    background-color: var(--mn);
+}
+.en{
+    background-color: var(--en);
+}
+.dw{
+    background-color: var(--en);
+}
+.hw{
+    background-color: var(--hw);
+}
+.ed:hover{
+    background-color: var(--edhover);
+    font-weight: 900;
+}
+.tap:hover{
+    background-color: var(--taphover);
+    font-weight: 900;
+}
+.tso:hover{
+    background-color: var(--tsohover);
+    font-weight: 900;  
+}
+.pead:hover{
+    background-color: var(--peadhover);
+    font-weight: 900;
+}
+.fbd:hover{
+    background-color: var(--fbdhover);
+    font-weight: 900;
+}
+.mn:hover{
+    background-color: var(--mnhover);
+    font-weight: 900;
+}
+.en:hover{
+    background-color: var(--enhover);
+    font-weight: 900;
+}
+.hw:hover{
+    background-color: var(--hwhover);
+    font-weight: 900;
+}
+.dw:hover{
+    background-color: var(--dwhover);
+    font-weight: 900;
+}
+.hw:hover{
+    background-color: var(--hwhover);
+    font-weight: 900;
+}
+.table{
+    border-top: 10px solid var(--border);
+    font-family: var(--secondary-font);
+    display: grid;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: whitesmoke;
+    grid-template-columns: repeat(5, 20%);
+    grid-auto-rows: 60px;
+    grid-gap: 0px;
+}
+.heads{
+    color: black;
+    text-align: center;
+    align-items: center;
+    height: 40px;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+.table >  div:not(.exclude, .heads){
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.class-code{
+    font-weight: bolder;
+}
+.exclude{
+    color:white;
+}
+.two-rows{
+    grid-row: span 2;
+}
+.half{
+    height: 60px;
+    display: block;
+    padding-top: 2px;
+    padding-left: 10px;
+    font-size: 0.90em;
+}
+/* Configuration div */
+.config{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.btn-setup{
+    font-family: var(--main-font);
+    font-weight: 900;
+    color: white;
+    background-color: var(--border);
+    border: 0px;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/* Contextual menu */
+ul {
+    list-style: none;
+  }
+  .context-menu { 
+    position: absolute; 
+  } 
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(64 64 64 / 5%);
+    padding: 10px 0;
+  }
+  .menu > li > a {
+    font: inherit;
+    border: 0;
+    padding: 10px 30px 10px 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-decoration: unset;
+    color: #000;
+    font-family: var(--main-font);
+    font-weight: 500;
+    transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -moz-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+  }
+  .menu > li > a:hover {
+    background:#f1f3f7;
+    color: #4b00ff;
+  }
+  .menu > li > a > i {
+    padding-right: 10px;
+  }
+  .menu > li.trash > a:hover {
+    color: red;
+  }
+/* Media queries */
+@media (max-width: 600px) {
+    .table{
+        width: 95%;
+        grid-auto-rows: 100px;
+        margin: 0px;
+    }
+    .half{
+        height: 100px;
+        display: block;
+        padding-left: 10px;
+    }
+}

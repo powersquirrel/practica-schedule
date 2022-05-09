@@ -1,0 +1,29 @@
+/*
+* Colorful palette
+*/
+:root{
+    --ed: #FFDD00;
+    --tap: #FFDD00;
+    --tso: #FFDD00;
+    --pead: #FFDD00;
+    --fbd: #FFDD00;
+    --mn: #FFDD00;
+    --dw: #FFDD00;
+    --en: #FFDD00;
+    --hw: #FFDD00;
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Rubik', sans-serif;
+    --border: #F58000;
+
+    /*Hover*/
+    --edhover: #FDD300;
+    --taphover: #FDD300;
+    --tsohover: #FDD300;
+    --peadhover: #FDD300;
+    --fbdhover: #FDD300;
+    --mnhover: #FDD300;
+    --dwhover: #FDD300;
+    --enhover: #FDD300;
+    --hwhover: #FDD300;
+    --hover: #FDD300;
+}

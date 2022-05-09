@@ -1,0 +1,29 @@
+/*
+* Pastel palette
+*/
+:root{
+    --ed: #F992AD;
+    --tap: #F78ECF;
+    --tso: #A480F2;
+    --pead: #FBBCEE;
+    --fbd: #CFB9F7;
+    --mn: #D4B0F9;
+    --dw: #FAB4C8;
+    --en: #E0CEFD;
+    --hw: #C580ED;
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Rubik', sans-serif;
+    --border: #8458e4;
+
+    /*Hover*/
+    --edhover: #e07290;
+    --taphover: #e77dbf;
+    --tsohover: #8f6adf;
+    --peadhover: #ec8fda;
+    --fbdhover: #ab8be6;
+    --mnhover: #b67cf0;
+    --dwhover: #f38ba9;
+    --enhover: #b187f5;
+    --hwhover: #b36bdd;
+    --hover: #FDD300;
+}

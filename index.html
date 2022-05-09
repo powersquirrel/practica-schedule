@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Horario de actividades</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/style_selector.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <div id="contextMenu" class="context-menu" style="display: none"> 
+        <ul class="menu"> 
+            <li class="share">
+                <a href="#">
+                    <p><i class="fa fa-info"></i> Información de la clase.</p>
+
+                </a>
+            </li> 
+            <li>
+                <a href="#">
+                <p id="name"></p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <p id="description"></p>
+                </a>
+            </li>
+        </ul> 
+    </div> 
+    <div class="container">
+        <h1>Horario de actividades.</h1>
+    </div>
+    <div class="table">
+        <div class="heads">Lunes</div>
+        <div class="heads">Martes</div>
+        <div class="heads">Miercoles</div>
+        <div class="heads">Jueves</div>
+        <div class="heads">Viernes</div>
+        <!--1-->
+        <div class="pead two-rows">
+            <p class="classcode">PEAD</p>
+            <p class="classlocation">Electronica</p>
+            <p class="classtime">07:00 - 09:00</p>
+        </div>
+        <div class="ed two-rows">
+            <p class="classcode">ED</p>
+            <p class="classlocation">Ciencias Básicas</p>
+            <p class="classtime">07:00 - 09:00</p>
+        </div>
+        <div class="pead two-rows">
+            <p class="classcode">PEAD</p>
+            <p class="classlocation">Sistemas</p>
+            <p class="classtime">07:00 - 09:00</p>
+        </div>
+        <div class="ed two-rows">
+            <p class="classcode">ED</p>
+            <p class="classlocation">Ciencias Básicas</p>
+            <p class="classtime">07:00 - 09:00</p>
+        </div>
+        <div class="mn two-rows">
+            <p class="classcode">MN</p>
+            <p class="classlocation">Ciencias Básicas</p>
+            <p class="classtime">07:00 - 09:00</p>
+        </div>
+        <!--2-->
+        <div class="fbd two-rows">
+            <p class="classcode">FDB</p>
+            <p class="classlocation">Sistemas</p>
+            <p class="classtime">09:00 - 11:00</p>
+        </div>
+        <div class="fbd two-rows">
+            <p class="classcode">FDB</p>
+            <p class="classlocation">Sistemas</p>
+            <p class="classtime">09:00 - 11:00</p>
+        </div>
+        <div class="two-rows exclude">
+            <div class="ed half">
+                <p class="classcode">ED</p>
+                <p class="classlocation">Ciencias Básicas</p>
+                <p class="classtime">09:00 - 10:00</p>
+            </div>
+            <div class="fbd half">
+                <p class="classcode">FDB</p>
+                <p class="classlocation">Sistemas</p>
+                <p class="classtime">10:00 - 11:00</p>
+            </div>
+        </div>
+        <div class="mn two-rows">
+            <p class="classcode">MN</p>
+            <p class="classlocation">Ciencias Básicas</p>
+            <p class="classtime">07:00 - 09:00</p>
+        </div>
+        <div class="two-rows"></div>
+        <!--3-->
+        <div class="tso two-rows">
+            <p class="classcode">TSO</p>
+            <p class="classlocation">Sistemas</p>
+            <p class="classtime">11:00 - 13:00</p>
+        </div>
+        <div class="tso two-rows">
+            <p class="classcode">TSO</p>
+            <p class="classlocation">Sistemas</p>
+            <p class="classtime">11:00 - 13:00</p>
+        </div>
+        <div class="tap two-rows">
+            <p class="classcode">TAP</p>
+            <p class="classlocation">Sistemas</p>
+            <p class="classtime">11:00 - 13:00</p>
+        </div>    
+        <div class="tap two-rows">
+            <p class="classcode">TAP</p>
+            <p class="classlocation">Sistemas</p>
+            <p class="classtime">11:00 - 13:00</p>
+        </div>    
+        <div class="two-rows exclude">
+            <div class="tap half">
+                <p class="classcode">TAP</p>
+                <p class="classlocation">Sistemas</p>
+                <p class="classtime">09:00 - 10:00</p>
+            </div>
+            <div class="pead half">
+                <p class="classcode">PEAD</p>
+                <p class="classlocation">Sistemas</p>
+                <p class="classtime">10:00 - 11:00</p>
+            </div>
+        </div>
+        <div class="two-rows exclude">
+            <div class="en half">
+                <p class="classcode">EN</p>
+                <p class="classlocation">Discord</p>
+                <p class="classtime">04:15 - 05:00</p>
+            </div>
+            <div class="hw half">
+                <p class="classcode">HW</p>
+                <p class="classlocation">Discord</p>
+                <p class="classtime">05:00 - 06:00</p>
+            </div>
+        </div>
+        <div class="two-rows exclude">
+            <div class="en half">
+                <p class="classcode">EN</p>
+                <p class="classlocation">Discord</p>
+                <p class="classtime">04:15 - 05:00</p>
+            </div>
+            <div class="hw half">
+                <p class="classcode">HW</p>
+                <p class="classlocation">Discord</p>
+                <p class="classtime">05:00 - 06:00</p>
+            </div>
+        </div>
+        <div></div>
+        <div class="two-rows exclude">
+            <div class="dw half">
+                <p class="classcode">DW</p>
+                <p class="classlocation">Discord</p>
+                <p class="classtime">04:15 - 05:00</p>
+            </div>
+            <div class="hw half">
+                <p class="classcode">HW</p>
+                <p class="classlocation">Discord</p>
+                <p class="classtime">05:00 - 06:00</p>
+            </div>
+        </div>
+        <div class="two-rows exclude">
+            <div class="dw half">
+                <p class="classcode">DW</p>
+                <p class="classlocation">Discord</p>
+                <p class="classtime">04:15 - 05:00</p>
+            </div>
+            <div class="hw half">
+                <p class="classcode">HW</p>
+                <p class="classlocation">Discord</p>
+                <p class="classtime">05:00 - 06:00</p>
+            </div>
+        </div>
+        <!--4-->
+    </div>
+    <div class="config">
+        <select name="select" id="styleselect"></select>
+        <button class="btn-setup" onclick="saveConfig()"><i class="fa fa-save"></i> Guardar</button>
+    </div>
+    <script>
+        document.onclick = hideMenu; 
+        document.oncontextmenu = rightClick; 
+
+        
+         function hideMenu() { 
+             document.getElementById("contextMenu") 
+                     .style.display = "none" 
+            
+         } 
+ 
+         function rightClick(e) { 
+             var codes = ["ed", "tso", "tap", "pead", "mn", "fbd", "en", "dw", "hw"];
+             e.preventDefault(); 
+             var cl = e.srcElement.className;
+             var cl_splitted = cl.split(" ");
+             var _cl = cl_splitted[0];
+             if(codes.includes(_cl)){
+                var name, description;
+                switch(_cl){
+                    case "ed":
+                        name = "Ecuaciones diferenciales";
+                        description = "Clase de mátematicas.";
+                        break;
+                    case "tso":
+                        name = "Taller de sistemas operativos";  
+                        description = "Clase con Cerpas, nunca sabe que está haciendo.";
+                        break;
+                    case "tap":
+                        name = "Tópicos avanzados de programación";  
+                        description = "Clase con Cerpas, nunca sabe que está haciendo.";
+                        break;
+                    case "pead":
+                        name = "Princpios electronicos y aplicaiones digitales";  
+                        description = "El profe Adal es homofobico.";
+                        break;
+                    case "mn":
+                        name = "Métodos Númericos";  
+                        description = "Es el chino.";
+                        break;
+                    case "fbd":
+                        name = "Fundamentos de bases de datos";  
+                        description = "No mames Vale par que quieres otra hoja extra wey, ah ya ví *se mea de la risa*";
+                        break;
+                    case "en":
+                        name = "English";  
+                        description = "Clase fantasma, nunca la hemos tenido.";
+                        break;
+                    case "dw":
+                        name = "Desarrollo web";  
+                        description = "Clase con el autista, ya hace falta una.";
+                        break;
+                    case "hw":
+                        name = "Homework";  
+                        description = "10 horas de esto por favor.";
+                        break;
+
+                }
+                document.getElementById("name").innerHTML = name;
+                document.getElementById("description").innerHTML = description;
+             }
+             
+             if (document.getElementById("contextMenu") .style.display == "block"){ 
+                 hideMenu(); 
+             }else{ 
+                 var menu = document.getElementById("contextMenu")      
+                 menu.style.display = 'block'; 
+                 menu.style.left = e.pageX + "px"; 
+                 menu.style.top = e.pageY + "px"; 
+             } 
+         } 
+    </script>
+</body>
+</html>
